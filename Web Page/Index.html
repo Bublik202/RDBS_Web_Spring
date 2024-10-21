@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Каталог товаров</h1>
+        <input type="text" id="search" placeholder="Поиск товаров...">
+        <div id="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Итого: 0$</p>
+        </div>
+    </header>
+
+    <nav>
+        <button class="filter-btn" data-category="all">Все</button>
+        <button class="filter-btn" data-category="electronics">Наушники</button>
+        <button class="filter-btn" data-category="mice">Мышка</button>
+    </nav>
+
+    <main>
+        <section id="catalog">
+            <!-- Наушники -->
+            <article class="product" data-category="electronics">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Logitech_G_Pro_X_Gaming_Headset.jpg/800px-Logitech_G_Pro_X_Gaming_Headset.jpg" alt="Logitech G Pro Headphones">
+                <h2>Наушники Logitech G Pro</h2>
+                <p>Цена: 230$</p>
+                <button class="add-to-cart" data-name="Logitech G Pro Headphones" data-price="230">Добавить в корзину</button>
+            </article>
+
+            <!-- Мышка -->
+            <article class="product" data-category="mice">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Logitech_Pro_X_Superlight_Gaming_Mouse.jpg/800px-Logitech_Pro_X_Superlight_Gaming_Mouse.jpg" alt="Logitech Pro X Mouse">
+                <h2>Мышка Logitech Pro X</h2>
+                <p>Цена: 150$</p>
+                <button class="add-to-cart" data-name="Logitech Pro X Mouse" data-price="150">Добавить в корзину</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ваш интернет-магазин</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
